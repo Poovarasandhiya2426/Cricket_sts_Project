@@ -27,7 +27,7 @@ public class cricketController {
     @Autowired
     cricketService cs;
     
-    @PostMapping(value="/postListOfCricketObject")
+    @PostMapping(value="/postListOfCricketObjects") 
     public String postListOfObject(@RequestBody List<cricketEntityBean> c) {
     	return cs.postListOfObject(c); 
     }
